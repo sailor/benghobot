@@ -1,1 +1,2 @@
-$("<%= escape_javascript render('message') %>").prependTo('#chat').fadeIn('slow');
+$("<%= escape_javascript render('message') %>").prependTo('#chat');
+$("<%= escape_javascript render('reaction') %>").hide().prependTo('#chat').fadeIn('slow');
