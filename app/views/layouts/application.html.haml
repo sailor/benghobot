@@ -1,0 +1,32 @@
+!!!5
+%html
+  %head
+    %title BenghoBot
+    = stylesheet_link_tag 'application', media: 'all'
+    %link{rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Open+Sans:400,600,800'}
+    = javascript_include_tag 'application'
+    = csrf_meta_tags
+
+  %body
+    = link_to 'https://github.com/you' do
+      = image_tag('https://s3.amazonaws.com/github/ribbons/forkme_right_red_aa0000.png', style: 'position: absolute; top: 0; right: 0; border: 0; z-index: 10000', alt: 'Fork me on GitHub')
+    .navbar.navbar-inverse.navbar-fixed-top
+      .navbar-inner
+        .container-fluid
+          %a.brand{href: '#'}
+            BenghoBot
+            %small v0.1
+
+    %section#main
+      = bootstrap_flash
+      .container-fluid
+        .row-fluid
+          .span12
+            = yield
+      #push
+
+  %footer.footer
+    %p
+      Powered by
+      &nbsp;
+      = image_tag('dlink.png')

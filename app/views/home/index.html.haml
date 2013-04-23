@@ -1,0 +1,8 @@
+%ul#chat
+
+= form_tag messages_path, remote: true do
+  = text_area_tag 'message', nil, rows: 4, placeholder: 'Manouche Telecom Bonjour !'
+  .pull-right= submit_tag 'Envoyer', class: 'btn btn-primary'
+
+.clearfix
+%br/
