@@ -20,11 +20,11 @@ html, body {
   min-height: 100%;
   height: auto !important;
   height: 100%;
-  margin: 0 auto -106px;
+  margin: 0 auto -121px;
 }
 
 #push {
-  height: 106px;
+  height: 121px;
 }
 
 .navbar-inner small {
